@@ -31,6 +31,8 @@
                 <div class="card border-success shadow text-success p-3 my-card "><span class="fa fa-eye" aria-hidden="true" style="color:white"></span></div>
                      <div class="text-success text-center mt-3" style="color:white"><h1>تفاصيل العقار</h1></div>
                 <div class="text-success text-center mt-3" style="color:white"><h1>{{$buInfo->bu_name}}</h1></div>
+        <div class="text-success text-center mt-3" style="color:white"><h1>  {{App\User::find($buInfo->user_id)->name}}</h1></div>
+
                 <div class="text-success text-center mt-2" style="color:white"><h3>{{$buInfo->bu_place}}</h3></div>
                        <div class="text-success mt-2" style="color:white"><h3>{{$buInfo->bu_price}}</h3></div>
                            <div class="text-success text-center mt-2" style="color:white"><h3>{{$buInfo->bu_meta}}</h3></div>

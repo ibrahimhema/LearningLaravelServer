@@ -21,7 +21,7 @@
 @else
     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h2 class="m-0 font-weight-bold text-primary">عرض طلبات المعاينه</h2>
+                            <h2 class="m-0 font-weight-bold" style="color: #2abb9b">عرض طلبات المعاينه</h2>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -72,7 +72,7 @@
                                             <td>{{getBuFromId($req->bu_id)->bu_place}}</td>
                                                     <th>{{getUserNameFromId($req->user_id)->name}}</th>
                                                         @if($req->stutues==0)
-                                                 <th><a href="{{url('/user/changeRequestStutues/'.$req->id)}}">اذهب لرؤيته</a>  </th>
+                                                 <th><a href="{{url('/user/changeRequestStutues/'.$req->id)}}"> <button class="btn btn-success">تمت الرؤيه</button></a>  </th>
                                                 @else
                                              <th>  </th>
                                             @endif

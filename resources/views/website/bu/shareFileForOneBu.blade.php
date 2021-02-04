@@ -25,7 +25,11 @@
 				<div class="rating-wrap">
 					<div class="label-rating">{{$bu->bu_place}}</div>
 					<div class="label-rating"><span>المساحه :</span>{{$bu->bu_square}}</div>
-                        	<div class="label-rating"><span>صاحب العقار :</span>{{App\User::find($bu->user_id)->name}}</div>
+					@if(strlen(App\User::find($bu->user_id)->name)>8)
+                        	<div class="label-rating"><span>صاحب العقار :</span>{{substr(App\User::find($bu->user_id)->name,0,7).'..'}}</div>
+						@else
+						<div class="label-rating"><span>صاحب العقار :</span>{{App\User::find($bu->user_id)->name}}</div>
+						@endif
 				</div> <!-- rating-wrap.// -->
 		</figcaption>
 		<div class="bottom-wrap">
