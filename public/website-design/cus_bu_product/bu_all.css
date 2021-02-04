@@ -1,0 +1,90 @@
+.card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center;
+}
+.card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+.card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.label-rating { margin-right:10px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-product .price-old {
+    color: #999;
+}
+
+
+
+
+
+
+.nav-sidebar2 { 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.nav-sidebar2 a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+}
+.nav-sidebar2 ul{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.bigtest{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+}
+.test{
+   
+         transition:all 0.5s ease;
+    }
+ .test:hover{width:105%;
+transform: scale(1.1);
+ }
+
+.nav-sidebar2 .active a { 
+    cursor: default;
+    background-color: #2abb9b; 
+    color: #fff; 
+}
+.nav-sidebar2 .active a:hover {
+    background-color: #E50000;   
+}
+.nav-sidebar2  a:hover {
+    background-color:#2abb9b;
+}
+.form-search-in-bu > *{
+    margin-bottom: 8px;
+}
+
+.my-card
+{
+   
+    border-radius:50%;
+}
